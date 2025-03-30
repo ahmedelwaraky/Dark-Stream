@@ -120,3 +120,9 @@
     height: auto;
     opacity: 0.8; /* Slight transparency for a subtle look */
 }
+
+.icon-inst {
+    width: 30px; /* Adjust width to match FontAwesome icon */
+    height: 30px; /* Adjust height to match FontAwesome icon */
+    vertical-align: middle; /* Align with text */
+}
