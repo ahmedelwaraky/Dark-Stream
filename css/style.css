@@ -36,7 +36,7 @@
     max-width: 100%;
 }
 .Data-section .row{
-    height: 750px;
+    height: 600px;
 }
 .up{
     border-bottom: 1px solid white;
@@ -60,16 +60,63 @@
     object-fit: cover;
     border-radius: 50%;
 }
-.social-links a {
-    color: #6c757d;
-    
-    margin: 0 10px;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+.left-side {
+    border-right: 1px solid white;
 }
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin :40px 0;
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #ffffff;
+    margin: 10px  ;
+    /* font-size: 1.5rem; */
+    transition: color 0.3s ease-in-out;
+}
+
 .social-links a:hover {
     color: #007bff;
 }
-.left-side {
-    border-right: 1px solid white;
+
+/* Centering the UL */
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+}
+
+.info-list li {
+    padding: 5px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.info-list li strong {
+    color: #ffffff;
+}
+.signature {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100px; /* Adjust the width to make it smaller */
+}
+
+.signature img {
+    width: 100%; /* Ensures the image scales properly */
+    height: auto;
+    opacity: 0.8; /* Slight transparency for a subtle look */
 }
