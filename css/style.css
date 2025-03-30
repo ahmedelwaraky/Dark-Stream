@@ -6,10 +6,10 @@
     font-family: "Cairo", sans-serif;
     font-family: "Montserrat", sans-serif;
 }
+
 .sec-gap{
     padding: 111.5git px 0;
 }
-
 
 #main-section {
     background-image: url('../img/DAROKY-03.png');
@@ -24,7 +24,6 @@
     align-items: center; /* Optional: vertically centers content */
 }
 
-
 .Data-section {
     position: relative;
     z-index: 10;
@@ -35,9 +34,11 @@
     width: 100%;
     max-width: 100%;
 }
+
 .Data-section .row{
     height: 600px;
 }
+
 .up{
     border-bottom: 1px solid white;
     
@@ -121,8 +122,13 @@
     opacity: 0.8; /* Slight transparency for a subtle look */
 }
 
-.icon-inst {
+.icon-inst  {
     width: 30px; /* Adjust width to match FontAwesome icon */
     height: 30px; /* Adjust height to match FontAwesome icon */
     vertical-align: middle; /* Align with text */
+    transition: all 0.3s ease-in-out;
+
+}
+.icon-inst:hover{
+    scale: 1.2;
 }
