@@ -6,7 +6,12 @@
     font-family: "Cairo", sans-serif;
     font-family: "Montserrat", sans-serif;
 }
-
+@font-face {
+    font-family: 'MyCustomFont'; /* Choose a custom name */
+    src: url('../fonts/kick-font.ttf') format('truetype'); /* Path to your font */
+    font-weight: normal;
+    font-style: normal;
+}
 .sec-gap{
     padding: 111.5git px 0;
 }
@@ -62,6 +67,11 @@
     font-size: 20px ;
     font-weight: 300;
 }
+.kick{
+    width:35px !important;
+    font-family: 'MyCustomFont'; 
+}
+
 
 .left-side {
     border-right: 1px solid white;
@@ -69,22 +79,38 @@
 
 .social-links {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin :40px 0;
-    margin-bottom: 20px;
+    justify-content: center;  /* Centers links horizontally */
+    align-items: center;      /* Aligns them properly */
+    gap: 15px;               /* Spaces between icons */
+    flex-wrap: nowrap;        /* Prevents wrapping to a new line */
+    margin: 40px 0 20px;
+}
+
+.kick-font {
+    font-family: 'MyCustomFont';
+    font-size: 40px;
+    color: #ffffff;
+    display: inline-block; /* Ensures it behaves like an icon */
 }
 
 .social-links a {
     color: #ffffff;
-    margin: 10px  ;
-    /* font-size: 1.5rem; */
+    margin: 0;  /* Remove extra margins */
     transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    display: flex;  /* Makes sure icons align properly */
+    align-items: center; /* Vertical centering */
 }
+
+.social-links i {
+    font-size: 40px; /* Make all icons the same size */
+}
+
 
 .social-links a:hover {
     color: #007bff;
 }
+
 
 .info-container {
     display: flex;
