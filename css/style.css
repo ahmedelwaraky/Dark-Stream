@@ -90,9 +90,12 @@
     font-family: 'MyCustomFont';
     font-size: 40px;
     color: #ffffff;
-    display: inline-block; /* Ensures it behaves like an icon */
+    display: inline-block; 
+    transition: all 0.3s ease-in-out; 
 }
-
+.kick-font:hover{
+    color: #53FC18; 
+}
 .social-links a {
     color: #ffffff;
     margin: 0;  /* Remove extra margins */
