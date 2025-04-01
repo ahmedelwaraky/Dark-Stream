@@ -52,9 +52,7 @@
     object-fit: cover;
     border-radius: 50%;
 }
-.stream-info img{
-    width: 100px;
-}
+
 .time{
     font-size: 25px !important;
     font-weight: 700;
@@ -64,10 +62,7 @@
     font-size: 20px ;
     font-weight: 300;
 }
-.kick{
-    width: 20px !important;
-  
-}
+
 .left-side {
     border-right: 1px solid white;
 }
