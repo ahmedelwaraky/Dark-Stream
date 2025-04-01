@@ -12,6 +12,10 @@
     font-weight: normal;
     font-style: normal;
 }
+a{
+    text-decoration: none;
+    color: #fff;
+}
 .sec-gap{
     padding: 111.5git px 0;
 }
@@ -75,6 +79,11 @@
 .stream-info .kick{
     width:35px !important;
     font-family: 'MyCustomFont'; 
+    transition: all 0.1s ease-in-out; 
+
+}
+.stream-info .kick:hover{
+    color: #53FC18; 
 }
 
 
