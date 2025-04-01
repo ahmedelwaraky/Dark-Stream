@@ -50,6 +50,10 @@
     max-width: 100%;
 }
 
+/* *****************Left ************** */
+.left-side {
+    border-right: 1px solid white;
+}
 
 .streamer-image {
     width: 200px;
@@ -58,24 +62,21 @@
     border-radius: 50%;
 }
 
-.time{
+.stream-info .stream-time{
+    font-size: 20px ;
+    font-weight: 300;
+}
+
+.stream-info .stream-time .time{
     font-size: 25px !important;
     font-weight: 700;
 }
 
-.stream-time{
-    font-size: 20px ;
-    font-weight: 300;
-}
-.kick{
+.stream-info .kick{
     width:35px !important;
     font-family: 'MyCustomFont'; 
 }
 
-
-.left-side {
-    border-right: 1px solid white;
-}
 
 .social-links {
     display: flex;
@@ -84,18 +85,6 @@
     gap: 15px;               /* Spaces between icons */
     flex-wrap: nowrap;        /* Prevents wrapping to a new line */
     margin: 40px 0 20px;
-}
-
-.kick-font {
-    font-family: 'MyCustomFont';
-    font-size: 40px;
-    color: #ffffff;
-    display: inline-block; 
-    transition: all 0.3s ease-in-out; 
-}
-
-.kick-font:hover{
-    color: #53FC18; 
 }
 
 .social-links a {
@@ -111,9 +100,72 @@
     font-size: 40px; /* Make all icons the same size */
 }
 
-.social-links a:hover {
-    color: #007bff;
+.social-links .instagram {
+    background-color:white ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out; 
 }
+
+.social-links .instagram:hover {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.2);
+}
+
+.social-links .tiktok {
+    background-color:white ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out; 
+}
+
+.social-links .tiktok:hover {
+    background: linear-gradient(45deg, 
+        #000000 0%,  /* Black Start */
+        #69C9D0 25%, /* Cyan */
+        #EE1D52 50%, /* Red */
+        #000000 75%  /* Black End */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: brightness(1.2);
+}
+
+
+
+.social-links .whatsapp  {
+    background-color:white ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem; /* Adjust size as needed */
+    transition: 0.3s ease-in-out;
+}
+
+.social-links .whatsapp:hover {
+    background: linear-gradient(45deg, #25D366, #128C7E, #075E54);
+    filter: brightness(1.2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-links .kick {
+    font-family: 'MyCustomFont';
+    font-size: 40px;
+    color: #ffffff;
+    display: inline-block; 
+    transition: all 0.1s ease-in-out; 
+}
+
+.social-links .kick:hover{
+    color: #53FC18; 
+}
+
+
+/* .social-links a:hover {
+    color: #007bff;
+} */
 
 
 .info-container {
@@ -158,7 +210,7 @@
 }
 
 .support-links a{
-    transition: all .4s .4s ease-in-out;
+    transition: all .1s .1s ease-in-out;
 
 }
 .support-links a:hover{
