@@ -249,6 +249,19 @@ a{
     opacity: 0.8; /* Slight transparency for a subtle look */
 }
 
+.signature-right {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 180px; /* Adjust the width to make it smaller */
+}
+
+.signature-right img {
+    width: 25%; /* Ensures the image scales properly */
+    height: auto;
+    opacity: 0.8; /* Slight transparency for a subtle look */
+}
+
 
 
 
