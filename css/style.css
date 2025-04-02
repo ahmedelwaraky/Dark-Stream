@@ -73,19 +73,18 @@ a{
 
 .stream-info .stream-time .time{
     font-size: 25px !important;
-    font-weight: 700;
+    font-family: 'MyCustomFont';
 }
 
-.stream-info .kick{
+.stream-info .kick-font{
     width:35px !important;
     font-family: 'MyCustomFont'; 
     transition: all 0.1s ease-in-out; 
-
 }
-.stream-info .kick:hover{
+
+.stream-info .kick-font:hover{
     color: #53FC18; 
 }
-
 
 .social-links {
     display: flex;
@@ -108,6 +107,7 @@ a{
 .social-links i {
     font-size: 40px; /* Make all icons the same size */
 }
+
 
 .social-links .instagram {
     background-color:white ;
@@ -142,8 +142,6 @@ a{
     filter: brightness(1.2);
 }
 
-
-
 .social-links .whatsapp  {
     background-color:white ;
     -webkit-background-clip: text;
@@ -170,12 +168,6 @@ a{
 .social-links .kick:hover{
     color: #53FC18; 
 }
-
-
-/* .social-links a:hover {
-    color: #007bff;
-} */
-
 
 .info-container {
     display: flex;
@@ -210,7 +202,22 @@ a{
 .Gaming-details .details{
     font-weight: 300;
 }
-.support-links .icon-inst  {
+
+.support-links a{
+    transition: all .1s .1s ease-in-out;
+}
+
+.support-links a:hover{
+    scale: 1.1;
+    background-color: rgb(255, 255, 255);
+}
+
+.support-links .support {
+    width: 100%;
+    max-width: 250px; /* Adjust width as needed */
+}
+
+.support-links .support .support-icon  {
     width: 30px; /* Adjust width to match FontAwesome icon */
     height: 30px; /* Adjust height to match FontAwesome icon */
     vertical-align: middle; /* Align with text */
@@ -218,23 +225,10 @@ a{
 
 }
 
-.support-links a{
-    transition: all .1s .1s ease-in-out;
-
-}
-.support-links a:hover{
-    scale: 1.1;
-    background-color: rgb(255, 255, 255);
-}
-
-.support-links .icon-inst:hover{
+.support-links .support-icon:hover{
     scale: 1.2;
 }
 
-.support-links .support {
-    width: 100%;
-    max-width: 250px; /* Adjust width as needed */
-}
 
 .signature {
     position: absolute;
@@ -264,7 +258,7 @@ a{
 
 
 
-
+/* Al Ahly Model  */
 .modal-backdrop {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(8px);
