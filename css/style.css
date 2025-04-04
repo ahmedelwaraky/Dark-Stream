@@ -333,7 +333,7 @@ a{
 }
 
 /* Ensures content stays above the background */
-.modal-body * {
+.modal-body {
     position: relative;
     z-index: 1;
 }
@@ -388,7 +388,7 @@ padding: 10px !important;
     }
 }
 
-.bybit-modal .modal-body * {
+.bybit-modal .modal-body  {
     position: relative;
     z-index: 1;
 }
@@ -407,4 +407,61 @@ padding: 10px !important;
     opacity: 0.1; /* Adjust this value (0.1 - 1) */
     z-index: 0;
     /* border-radius: 10px; */
+}
+
+
+
+
+.qnb-modal {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 47, 108, 0.3);
+    color: #fff !important;
+    animation: fadeIn 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.qnb-modal .modal-header {
+    background: linear-gradient(45deg, #002f6c, #800020);
+    color: #fff;
+    /* padding: 10px !important; */
+    border-bottom: none;
+}
+
+.qnb-modal .modal-body {
+    color: #000000;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.qnb-modal .modal-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/qnb.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.qnb-modal .modal-body * {
+    position: relative;
+    z-index: 1;
+}
+
+.qnb-icon {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.qnb-text {
+    color: #f0d98c;
+    font-weight: bold;
 }
