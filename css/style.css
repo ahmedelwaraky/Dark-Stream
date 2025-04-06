@@ -454,10 +454,9 @@ padding: 10px !important;
     position: relative;
     z-index: 1;
 }
-.qnb-modal .modal-body p{
-    color: #000000 !important;
+.custom-modal p, .custom-modal strong {
+    color: #000 !important;
 }
-
 .qnb-icon {
     width: 40px;
     height: auto;
