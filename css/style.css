@@ -306,7 +306,7 @@ a{
 .modal-body p, .modal-body strong {
     position: relative;
     z-index: 1;
-    color: #000;
+    color: #000 !important;
 }
 
 /* Al Ahly Modal Styles */
