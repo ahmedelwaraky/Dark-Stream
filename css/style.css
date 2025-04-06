@@ -378,7 +378,13 @@ a{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-
+.qnb-modal .modal-body{
+    padding: 20px;
+    background: linear-gradient(45deg, #002f6c, #800020);
+    color: #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
 .qnb-modal .modal-body::before {
     background-image: url('../img/qnb-r.png');
     background-size: 60%;
