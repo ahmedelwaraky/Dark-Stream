@@ -356,12 +356,12 @@ a{
     background-image: url('../img/Bybit-logo.png');
 }
 
-.bybit-modal .modal-body p {
+.bybit-modal .modal-body h6 {
     color: #333;
 }
 
 /* QNB Modal Styles */
-/* .qnb-modal {
+.qnb-modal {
     border-radius: 15px;
     box-shadow: 0px 8px 20px rgba(0, 47, 108, 0.3);
     animation: fadeIn 0.4s ease-in-out;
@@ -382,7 +382,7 @@ a{
 .qnb-modal .modal-body::before {
     background-image: url('../img/qnb-r.png');
     background-size: 60%;
-} */
+}
 
 
 
