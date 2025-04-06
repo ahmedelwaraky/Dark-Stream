@@ -371,8 +371,8 @@ a{
 }
 
 .qnb-modal .modal-header {
-    background: linear-gradient(45deg, #002f6c, #800020);
-    color: #fff;
+    /* background: linear-gradient(45deg, #002f6c, #800020); */
+    /* color: #fff; */
     padding: 10px;
     border-bottom: none;
     border-top-left-radius: 15px;
