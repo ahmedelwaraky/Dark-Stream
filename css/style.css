@@ -399,3 +399,23 @@ a{
     color: #ffcc00;
     font-weight: bold;
 }
+
+
+
+.qnb-modal {
+    color: #fff !important;
+}
+.qnb-modal .modal-body p,
+.qnb-modal .modal-body strong,
+.qnb-modal .modal-body h6,
+.qnb-modal .modal-body span {
+    color: #000000 !important; /* لون أسود وإجباري بـ !important */
+}
+@media screen and (max-width: 767px) {
+    .qnb-modal .modal-body p,
+    .qnb-modal .modal-body strong,
+    .qnb-modal .modal-body h6,
+    .qnb-modal .modal-body span {
+        color: #000000 !important;
+    }
+}
