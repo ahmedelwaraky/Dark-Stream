@@ -256,124 +256,10 @@ a{
     opacity: 0.8; /* Slight transparency for a subtle look */
 }
 
-
-
-/* Al Ahly Model  */
+/* Common Modal Styles */
 .modal-backdrop {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(8px);
-}
-
-/* Modal Custom Design */
-.custom-modal {
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-    background: white;
-    animation: fadeIn 0.4s ease-in-out;
-}
-
-/* Modal Header Gradient */
-.custom-modal .modal-header {
-    background: linear-gradient(45deg, #ffb7008e, #006941fd);
-    color: white;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    padding: 5px;
-}
-
-/* Modal Footer Styling */
-.custom-modal .modal-footer {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    justify-content: center;
-    padding: 5px;
-
-}
-
-/* Smooth Modal Animation */
-@keyframes fadeIn {
-    from {
-        transform: scale(0.9);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-.icon-alahly {
-    width: 40px;  /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Adds spacing between icon and text */
-}
-.modal-body {
-    position: relative;
-    background-color: #f8f9fa; /* Fallback color */
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
-
-/* Background image with opacity */
-.modal-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/alahly.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.1; /* Adjust this value (0.1 - 1) */
-    z-index: 0;
-    border-radius: 10px;
-}
-
-/* Ensures content stays above the background */
-.modal-body {
-    position: relative;
-    z-index: 1;
-}
-
-.light-text {
-    font-weight: 800; /* Makes the text light */
-    color: #666; /* Optional: Light gray color for contrast */
-}
-
-
-
-
-
-/* Bybit Modal Styling */
-.bybit-modal {
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(255, 194, 51, 0.3);
-    color: white;
-    animation: fadeIn 0.4s ease-in-out;
-}
-
-/* Bybit Modal Header */
-.bybit-modal .modal-header {
-    background: linear-gradient(45deg, #ffcc00, #ff9900);
-    color: black;
-padding: 10px !important;
-}
-
-/* Bybit Text Styling */
-.bybit-text {
-    color: #ffcc00; /* Bybit Gold */
-    font-weight: bold;
-}
-
-/* Bybit Icon */
-.bybit-icon {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
 }
 
 /* Modal Animation */
@@ -388,82 +274,128 @@ padding: 10px !important;
     }
 }
 
-.bybit-modal .modal-body  {
-    position: relative;
-    z-index: 1;
-}
-
-.bybit-modal .modal-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/Bybit-logo.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.1; /* Adjust this value (0.1 - 1) */
-    z-index: 0;
-    /* border-radius: 10px; */
-}
-
-
-
-
-.qnb-modal {
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 47, 108, 0.3);
-    color: #fff !important;
-    animation: fadeIn 0.4s ease-in-out;
-    position: relative;
-    overflow: hidden;
-}
-
-.qnb-modal .modal-header {
-    background: linear-gradient(45deg, #002f6c, #800020);
-    color: #fff;
-    /* padding: 10px !important; */
-    border-bottom: none;
-}
-
-.qnb-modal .modal-body {
-    color: #000000;
-    position: relative;
-    z-index: 1;
-    background-color: transparent;
-}
-
-.qnb-modal .modal-body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../img/qnb-r.png');
-    background-size: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.1;
-    z-index: 0;
-}
-
-.qnb-modal .modal-body * {
-    position: relative;
-    z-index: 1;
-}
-.custom-modal p, .custom-modal strong {
-    color: #000 !important;
-}
-.qnb-icon {
+/* Common Modal Icon Styles */
+.modal-icon {
     width: 40px;
     height: auto;
     margin-right: 10px;
 }
 
+/* Modal Body Base Styles */
+.modal-body {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+}
+
+.modal-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.modal-body p, .modal-body strong {
+    position: relative;
+    z-index: 1;
+    color: #000;
+}
+
+/* Al Ahly Modal Styles */
+.custom-modal {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    background: white;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.custom-modal .modal-header {
+    background: linear-gradient(45deg, #ffb7008e, #006941fd);
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+}
+
+.custom-modal .modal-footer {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    justify-content: center;
+    padding: 5px;
+}
+
+.custom-modal .modal-body::before {
+    background-image: url('../img/alahly.png');
+}
+
+/* Bybit Modal Styles */
+.bybit-modal {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(255, 194, 51, 0.3);
+    color: white;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.bybit-modal .modal-header {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: black;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.bybit-modal .modal-body::before {
+    background-image: url('../img/Bybit-logo.png');
+}
+
+.bybit-modal .modal-body p {
+    color: #333;
+}
+
+/* QNB Modal Styles */
+.qnb-modal {
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 47, 108, 0.3);
+    animation: fadeIn 0.4s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    background: white;
+}
+
+.qnb-modal .modal-header {
+    background: linear-gradient(45deg, #002f6c, #800020);
+    color: #fff;
+    padding: 10px;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.qnb-modal .modal-body::before {
+    background-image: url('../img/qnb-r.png');
+    background-size: 60%;
+}
+
+/* Additional Classes */
+.light-text {
+    font-weight: 800;
+    color: #666;
+}
+
 .qnb-text {
     color: #f0d98c;
+    font-weight: bold;
+}
+
+.bybit-text {
+    color: #ffcc00;
     font-weight: bold;
 }
