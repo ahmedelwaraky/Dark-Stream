@@ -310,14 +310,14 @@ a{
 }
 
 /* Al Ahly Modal Styles */
-.custom-modal {
+.alahly-modal {
     border-radius: 15px;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
     background: white;
     animation: fadeIn 0.4s ease-in-out;
 }
 
-.custom-modal .modal-header {
+.alahly-modal .modal-header {
     background: linear-gradient(45deg, #ffb7008e, #006941fd);
     color: white;
     border-top-left-radius: 15px;
@@ -325,14 +325,14 @@ a{
     padding: 10px;
 }
 
-.custom-modal .modal-footer {
+.alahly-modal .modal-footer {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     justify-content: center;
     padding: 5px;
 }
 
-.custom-modal .modal-body::before {
+.alahly-modal .modal-body::before {
     background-image: url('../img/alahly.png');
 }
 
@@ -384,38 +384,10 @@ a{
     background-size: 60%;
 }
 
-/* Additional Classes */
-.light-text {
-    font-weight: 800;
-    color: #666;
-}
-
-.qnb-text {
-    color: #f0d98c;
-    font-weight: bold;
-}
-
-.bybit-text {
-    color: #ffcc00;
-    font-weight: bold;
+.qnb-modal .modal-body p {
+    color: #333;
 }
 
 
 
-.qnb-modal {
-    color: #fff !important;
-}
-.qnb-modal .modal-body p,
-.qnb-modal .modal-body strong,
-.qnb-modal .modal-body h6,
-.qnb-modal .modal-body span {
-    color: #000000 !important; /* لون أسود وإجباري بـ !important */
-}
-@media screen and (max-width: 767px) {
-    .qnb-modal .modal-body p,
-    .qnb-modal .modal-body strong,
-    .qnb-modal .modal-body h6,
-    .qnb-modal .modal-body span {
-        color: #000000 !important;
-    }
-}
+
