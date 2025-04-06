@@ -383,7 +383,9 @@ a{
     background-image: url('../img/qnb-r.png');
     background-size: 60%;
 } */
-
+.accNum strong{
+    color:#25D366 !important
+}
 
 
 
